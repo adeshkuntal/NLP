@@ -1,0 +1,33 @@
+A regular expression (often shortened as regex or regexp) is a sequence of characters that defines a search pattern. 
+It is used to match, find, extract, or replace parts of strings based on specific rules.
+
+
+🔹 Common Use Cases:
+Validate input (like email, phone number, password)
+Search for patterns in text (e.g., all words starting with A)
+Extract data from documents or logs
+Replace text patterns (e.g., replace all dates with a placeholder)
+
+
+🔹 Example:
+Regex: \d{3}-\d{2}-\d{4}
+This matches a string like: 123-45-6789
+Explanation:
+\d = any digit (0–9)
+{3} = exactly 3 digits
+- = a literal dash
+
+
+🔹 Some Basic Regex Symbols:
+| Symbol | Meaning                            | Example                        |   
+| ------ | ---------------------------------- | ------------------------------ | 
+| `.`    | Any single character               | `a.c` → `abc`, `acc`           |       
+| `\d`   | Any digit (0–9)                    | `\d\d` → `42`                  |     
+| `\w`   | Word character (a-z, A-Z, 0-9, \_) | `\w+` → `hello_123`            |       
+| `\s`   | Whitespace (space, tab, etc.)      | `\s` → `' '`                   |       
+| `*`    | 0 or more times                    | `a*` → `aaa`, `a`, \`\`        |     
+| `+`    | 1 or more times                    | `a+` → `aaa`, `a`              |      
+| `?`    | 0 or 1 time                        | `colou?r` → `color`, `colour`  |       
+| `[]`   | Any one character in brackets      | `[abc]` → `a`, `b`, or `c`     |       
+| `^`    | Start of string                    | `^Hello` matches `Hello world` |      
+| `$`    | End of string                      | `world$` matches `Hello world` |       
